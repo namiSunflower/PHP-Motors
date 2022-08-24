@@ -1,0 +1,330 @@
+/*phone or baseline view*/
+/*put import font line here*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    background-image:url(../images/site/small_check.jpg);
+    background-color: black;
+    background-size: cover;
+    font-family: 'Share Tech Mono', monospace;
+    color: #3a3a3a;
+}
+#delorean{
+    width: 100%;
+}
+#wrapper{
+    background-color: #ffff;
+    width: fit-content;
+}
+nav{
+    background-color:#3a3a3a;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li a{
+    cursor: pointer;
+    padding: 0.5rem;
+    color:#ffff;
+    font-size: 1.2em;
+    display:block;
+}
+
+header a, nav ul li a{
+    text-decoration: none;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 30px 10px 3px;
+}
+header a{
+    font-size:10px;
+    color: #3a3a3a;
+}
+nav li a:hover{
+    background-color: #4c96d7;
+    color:#3a3a3a;
+}
+#logo{
+    width: 40%;
+    cursor: pointer;
+}
+main{ 
+    padding: 1em;
+}
+h1{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+#container{
+    color:#4c96d7;
+}
+#text{
+    padding-top: 2em;
+    color:#4c96d7;
+}
+#cta{
+    margin: 1em auto 1em auto;
+    width: 50%;
+    display: block;
+    cursor: pointer;
+}
+#reviews ul{
+    margin: 1.3em;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    grid-column-gap:10px;
+    grid-row-gap: 1em;
+}
+.figure{
+    height:90px;
+    background-color:#4c96d7;
+    padding-top:10px;
+    border: 1px solid #3a3a3a;
+}
+hr{
+    border:3px solid #3a3a3a;
+}
+footer{
+    text-align: center;
+}
+footer div{
+    padding: 0 1em 0 1em;
+}
+h2, h3{
+    font-weight: bolder;
+}
+p{
+    margin-top:0.5rem;
+}
+input:not([type=radio]){
+    width: 100%;
+    display: block;
+    margin-bottom:2em;
+}
+input:not(.regbtn){
+    padding:2px
+}
+select{
+    display:block;
+    margin-bottom:1em;
+    width:100%;
+}
+textarea{
+    display:block;
+    margin-bottom:2em;
+    width:100%;
+}
+label{
+    font-size:1.3em;
+}
+.infoSpan{
+    margin-top:1em;
+    display:block;
+    font-size: 1.2em;
+}
+form, .paragraph, .margin_top{
+    margin-top:1em;
+}
+.paragraph{
+    margin-bottom:1em;
+}
+.button{
+    font-size: 1em;
+    padding: 3px;
+    margin-bottom: 2em;
+    background-color: #4c96d7;
+}
+#registerLink{
+    font-size:1.2em;
+}
+/* #showPass{
+    margin: 1em 0 1em 0;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #3a3a3a;
+    color: #ffff;
+}  */
+.carManagement li, .adminDetails li, #rev-display li{
+    margin-bottom: 3px;
+    margin-left:2em;
+}
+#rev-display{
+    margin-top:1em;
+}
+.adminDetails li{
+    margin-bottom: 1em;
+}
+.red{
+    color:#810E0E;
+    font-style: italic;
+}
+select{
+    font-size:1.2em;
+}
+#flex-span{
+    display:flex;
+    flex-wrap: wrap;
+}
+#welcome{
+    text-align: center;
+}
+.margin_left{
+    margin-left: 5px;
+}
+.notify{
+    font-weight: bold;
+}
+.margins{
+    margin-top:1em;
+    margin-bottom:1em;
+}
+#inv-display{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   }
+   
+#inv-display li{
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+    text-align: center;
+   }
+   
+#inv-display li img{
+    max-width: 60%;
+}  
+#parent-div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1em;
+    justify-content: center;
+}
+.invImage{
+    width:100%;
+    margin-bottom:1em;
+}
+.alternate div{
+    padding:10px;
+}
+.alternate div:nth-child(odd){
+    background-color:#eee;
+}
+.resize-heading{
+    font-size:1.17em;
+    margin-bottom: 1em;
+}
+#two-cols{
+    display:flex;
+    flex-direction:column-reverse;
+}
+#tn{
+    display:flex;
+    gap: 5px;
+}
+#tn img{
+    width:100%;
+}
+#image-display{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style-type: none;
+    align-items: flex-start;
+    gap: 1em;
+    margin-top: 1em;
+}
+#image-display img{
+    width: 100%;
+}
+#no_border{
+    border: none;
+    margin-bottom: 1em;
+}
+.none, #review_fieldset{
+    margin-bottom:1em;
+}
+#review_fieldset{
+    padding:1em;
+}
+.yellow{
+    padding: 2em 1em 1em 1em;
+    background-color: #FFFAA0;
+    margin-bottom: 1em;
+}
+.small_font{
+    font-size: 80%;
+}
+
+.white{
+    padding: 5px;
+    background-color: white;
+}
+.italic{
+    font-style: italic;
+    font-size: 1.2em;
+}
+#update_field, #delete_field{
+    padding: 1em;
+}
+.yellow_color{
+    background-color:#FFFAA0;
+    margin-bottom: 1em;
+}
+@media only screen and (min-width: 146px){ 
+    header a{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 400px){ 
+    nav ul{
+        flex-direction: row;
+    }
+    header a{
+        font-size: 1.2em;
+    }
+    .infoSpan{
+        font-size: 1em;
+    }
+    #deleteForm{
+        margin-top: 1em;
+        border: 1px solid black;
+        padding: 1em;
+    }
+    .invImage{
+        width:auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    #tn img{
+        max-width: 200px;
+        max-height: 200px;
+        width:auto;
+        height:auto;
+    }
+}
